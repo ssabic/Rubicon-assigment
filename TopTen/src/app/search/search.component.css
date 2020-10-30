@@ -1,0 +1,51 @@
+.card{
+    width: 50%; 
+    display: inline-block; 
+    text-align: center;
+}
+
+.names{
+    display: initial;
+    font-size: large;
+    font-style: revert;
+    font-variant: petite-caps;
+}
+
+.button{
+    border: white;
+    background-color: white;
+}
+
+#search-text-input{
+    border-top:thin solid  #e5e5e5;
+    border-right:thin solid #e5e5e5;
+    border-bottom:0;
+    border-left:thin solid  #e5e5e5;
+    box-shadow:0px 1px 1px 1px #e5e5e5;
+    float:left;
+    height:17px;
+    margin:.8em 0 0 .5em; 
+    outline:0;
+    padding:.4em 0 .4em .6em; 
+    width:183px; 
+    width: -webkit-fill-available;
+    text-align: center;
+}
+  
+#button-holder{
+    background-color:#f1f1f1;
+    border-top:thin solid #e5e5e5;
+    box-shadow:1px 1px 1px 1px #e5e5e5;
+    cursor:pointer;
+    float:left;
+    height:27px;
+    margin:11px 0 0 0;
+    text-align:center;
+    width:50px;
+    position: absolute;
+}
+  
+#button-holder img{
+    margin:4px;
+    width:20px; 
+}

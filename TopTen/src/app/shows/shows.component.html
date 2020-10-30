@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="card" *ngFor="let show of shows | slice:0:10" 
+    style="width:50%; display: inline-block; text-align: center">
+        <div class="card-body">
+            <h5 class="card-title">
+                <button class="button"><img src={{show.image}}></button>
+                <figcaption><button class="button"><p class="names">{{show.title}}</p></button></figcaption>
+            </h5>
+        </div>
+    </div>
+</div>

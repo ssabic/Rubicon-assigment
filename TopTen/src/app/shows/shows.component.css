@@ -1,0 +1,11 @@
+.names{
+  display: initial;
+  font-size: large;
+  font-style: revert;
+  font-variant: petite-caps;
+}
+
+.button{
+  border: white;
+  background-color: white;
+}

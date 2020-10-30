@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="card" *ngFor="let movie of movies | slice:0:10">
+        <div class="card-body">
+            <h5 class="card-title">
+                <button class="button" (click)="redirect();"><img
+                        src={{movie.image}}></button>
+                <figcaption><button class="button" (click)="redirect()">
+                        <p class="names">{{movie.title}}</p>
+                    </button></figcaption>
+            </h5>
+        </div>
+    </div>
+</div>

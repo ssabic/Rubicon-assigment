@@ -1,0 +1,28 @@
+<section style="padding-top: 1%">
+    <form [formGroup]="searchForm">
+        <label>
+            <input type="text" (keyup)="searchTerm.next($event)" formControlName="search" placeholder="Search" id='search-text-input'/>
+            <div id="button-holder">
+                <img src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png"/>
+            </div>
+            <div *ngIf="loading">
+                <p class="search message">Searching</p>
+                <div class="lds-ellipsis"></div>
+            </div>
+        </label>
+    </form>
+
+    <div class="container">
+        <div class="card" *ngFor="let movie of paginationElements">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <button class="button"><img
+                            src={{movie.image}}></button>
+                    <figcaption><button class="button">
+                            <p class="names">{{movie.title}}</p>
+                        </button></figcaption>
+                </h5>
+            </div>
+        </div>
+    </div>
+</section>
