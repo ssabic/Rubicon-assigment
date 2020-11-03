@@ -12,17 +12,16 @@
         </label>
     </form>
 
-    <div class="container">
-        <div class="card" *ngFor="let movie of paginationElements">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <button class="button"><img
-                            src={{movie.image}}></button>
-                    <figcaption><button class="button">
-                            <p class="names">{{movie.title}}</p>
-                        </button></figcaption>
-                </h5>
-            </div>
+<div class="container">
+    <div class="card" *ngFor="let movie of paginationElements">
+        <div class="card-body">
+            <h5 class="card-title">
+                <button class="button" (click)="redirect(movie.id);"><img
+                        src={{movie.image}}></button>
+                <figcaption><button class="button" (click)="redirect(movie.id);">
+                        <p class="names">{{movie.title}}</p>
+                    </button></figcaption>
+            </h5>
         </div>
     </div>
-</section>
+</div>

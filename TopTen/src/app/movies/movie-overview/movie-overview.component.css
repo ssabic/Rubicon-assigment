@@ -1,0 +1,18 @@
+.image{
+    padding-left: 40%;
+    padding-top: 3%;
+}
+
+.names{
+    padding-left: 40%;
+    font-size: large;
+    font-style: revert;
+    font-variant: petite-caps;
+}
+
+.button{
+    padding-top: 2%;
+    background: white;
+    border: white;
+    font-size: medium;
+}

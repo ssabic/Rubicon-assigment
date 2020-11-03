@@ -21,9 +21,9 @@ export class SearchService {
             return this.httpClient.get(this.baseMovieUrl, { params });
         }
     }
-    
+
     public searchShowsEntries(term): Observable<any> {
-        if(term === ''){
+        if (term === ''){
             console.log('Not defined');
         }else {
             const params = {query: term};

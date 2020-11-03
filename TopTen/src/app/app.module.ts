@@ -17,12 +17,6 @@ import { ShowOverviewComponent } from './shows/show-overview/show-overview.compo
 import { ShowsComponent } from './shows/shows.component';
 
 
-// const appRoutes: Routes = [
-//   { path: '', redirectTo: '/shows', pathMatch: 'full' },
-//   { path: 'shows', component: ShowsComponent },
-//   { path: 'movies', component: MoviesComponent },
-//   { path: 'movies/overview', component: MovieOverviewComponent },
-//   { path: 'shows/overview', component: ShowOverviewComponent }
 
 // ];
 @NgModule({
@@ -30,11 +24,11 @@ import { ShowsComponent } from './shows/shows.component';
     AppComponent,
     MenuComponent,
     routingComponents,
-    SearchComponent,
     MovieOverviewComponent,
     ShowOverviewComponent,
     ShowsComponent,
-    MoviesComponent
+    MoviesComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

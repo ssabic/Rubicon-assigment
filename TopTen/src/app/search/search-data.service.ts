@@ -6,9 +6,7 @@ export class SearchDataService {
     public tvShowList;
     filter = '';
 
-    constructor() {
-        
-    }
+    constructor() {}
 
     public getMovieList() {
         return this.movieList;
@@ -16,7 +14,6 @@ export class SearchDataService {
     public gettvShowList() {
         return this.tvShowList;
     }
-    
     public getFilter() {
         return this.filter;
     }
@@ -24,7 +21,4 @@ export class SearchDataService {
     public setFilter(filter) {
         this.filter = filter;
     }
-    
-    
-    
 }

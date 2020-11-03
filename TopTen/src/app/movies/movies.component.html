@@ -1,10 +1,11 @@
 <div class="container">
+    <p class="text">TOP 10 MOVIES</p>
     <div class="card" *ngFor="let movie of movies | slice:0:10">
         <div class="card-body">
             <h5 class="card-title">
-                <button class="button" (click)="redirect();"><img
+                <button class="button" (click)="redirect(movie.id);"><img
                         src={{movie.image}}></button>
-                <figcaption><button class="button" (click)="redirect()">
+                <figcaption><button class="button" (click)="redirect(movie.id)">
                         <p class="names">{{movie.title}}</p>
                     </button></figcaption>
             </h5>

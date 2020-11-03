@@ -11,8 +11,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/shows', pathMatch: 'full' },
   { path: 'shows', component: ShowsComponent },
   { path: 'movies', component: MoviesComponent, pathMatch: 'full' },
-  { path: 'movies/overview', component: MovieOverviewComponent, pathMatch: 'full' },
-  { path: 'shows/overview', component: ShowOverviewComponent, pathMatch: 'full' }
+  { path: 'movies/overview/:id', component: MovieOverviewComponent },
+  { path: 'shows/overview/:id', component: ShowOverviewComponent }
 ];
 
 @NgModule({

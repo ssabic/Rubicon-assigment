@@ -1,8 +1,12 @@
+<button class="button" (click)="goBack()">BACK</button>
 <div class="container">
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">
-                <figcaption>{{selectedMovie.overview}}</figcaption>
+            <img class="image" src={{selectedMovie.image}}>
+            <figcaption> <p class="names">{{selectedMovie.title}}</p> </figcaption>
+            <p>Movie overview</p>
+            <p>{{selectedMovie.overview}}</p>
             </h5>
         </div>
     </div>
